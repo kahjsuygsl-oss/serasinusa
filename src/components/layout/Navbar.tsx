@@ -8,7 +8,7 @@ export function Navbar() {
       <div className="container mx-auto px-4 h-20 flex items-center justify-between">
         <Link href="/" className="flex items-center space-x-2">
           <Image
-            src="https://www.serasinusa.id/wp-content/uploads/2024/05/logo-serasi-nusa.png"
+            src="https://drive.google.com/file/d/1avA_x-DRudKTzYvwSymEQCQFWjIgx8h6/view?usp=sharing"
             alt="Logo Serasi Nusa"
             width={190}
             height={58}
