@@ -1,0 +1,41 @@
+<svg width="128" height="128" viewBox="0 0 128 128" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
+  <title id="title">Robot Scavenger Player</title>
+  <desc id="desc">A small top-down robot player with one neon green sensor eye.</desc>
+  <defs>
+    <filter id="neonGlow" x="-40%" y="-40%" width="180%" height="180%" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feColorMatrix in="blur" type="matrix" values="0 0 0 0 0.2235 0 0 0 0 1 0 0 0 0 0.0784 0 0 0 0.85 0" result="glow"/>
+      <feMerge>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <linearGradient id="body" x1="31" y1="25" x2="97" y2="104" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#2F3942"/>
+      <stop offset="1" stop-color="#13191F"/>
+    </linearGradient>
+    <linearGradient id="panel" x1="43" y1="38" x2="85" y2="91" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#56636E"/>
+      <stop offset="1" stop-color="#232C34"/>
+    </linearGradient>
+  </defs>
+  <path d="M64 13L78 28H50L64 13Z" fill="#39FF14" filter="url(#neonGlow)"/>
+  <path d="M64 18L72 27H56L64 18Z" fill="#0B1116"/>
+  <path d="M34 36C34 28.268 40.268 22 48 22H80C87.732 22 94 28.268 94 36V92C94 99.732 87.732 106 80 106H48C40.268 106 34 99.732 34 92V36Z" fill="#071015"/>
+  <path d="M39 38C39 31.925 43.925 27 50 27H78C84.075 27 89 31.925 89 38V90C89 96.075 84.075 101 78 101H50C43.925 101 39 96.075 39 90V38Z" fill="url(#body)"/>
+  <path d="M28 53C28 48.582 31.582 45 36 45H41V83H36C31.582 83 28 79.418 28 75V53Z" fill="#121A20"/>
+  <path d="M87 45H92C96.418 45 100 48.582 100 53V75C100 79.418 96.418 83 92 83H87V45Z" fill="#121A20"/>
+  <path d="M31 55C31 52.791 32.791 51 35 51H41V77H35C32.791 77 31 75.209 31 73V55Z" fill="#39FF14" opacity="0.22"/>
+  <path d="M87 51H93C95.209 51 97 52.791 97 55V73C97 75.209 95.209 77 93 77H87V51Z" fill="#39FF14" opacity="0.22"/>
+  <rect x="46" y="36" width="36" height="56" rx="10" fill="url(#panel)" stroke="#39FF14" stroke-opacity="0.65" stroke-width="3"/>
+  <circle cx="64" cy="58" r="17" fill="#071015" stroke="#39FF14" stroke-width="4" filter="url(#neonGlow)"/>
+  <circle cx="64" cy="58" r="8" fill="#39FF14"/>
+  <circle cx="60" cy="54" r="2.5" fill="#ECFFE8"/>
+  <path d="M53 82H75" stroke="#39FF14" stroke-width="4" stroke-linecap="round"/>
+  <path d="M50 96V112" stroke="#071015" stroke-width="8" stroke-linecap="round"/>
+  <path d="M78 96V112" stroke="#071015" stroke-width="8" stroke-linecap="round"/>
+  <path d="M49 109H59" stroke="#39FF14" stroke-width="5" stroke-linecap="round"/>
+  <path d="M69 109H79" stroke="#39FF14" stroke-width="5" stroke-linecap="round"/>
+  <path d="M39 67H27" stroke="#39FF14" stroke-width="4" stroke-linecap="round" opacity="0.85"/>
+  <path d="M89 67H101" stroke="#39FF14" stroke-width="4" stroke-linecap="round" opacity="0.85"/>
+</svg>
