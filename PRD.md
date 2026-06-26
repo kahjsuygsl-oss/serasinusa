@@ -1,5 +1,11 @@
 # PRD - Project Requirements Document
 
+> **Pembaruan stack (Juni 2026):** Target diubah dari cPanel + MySQL/MariaDB ke
+> **Vercel + MongoDB Atlas** (ODM: Mongoose). Bagian arsitektur, database schema, dan
+> deployment di bawah ditulis untuk rencana cPanel/MySQL lama dan dipertahankan sebagai
+> arsip. Untuk implementasi & setup terkini, lihat [docs/SETUP_VERCEL.md](./docs/SETUP_VERCEL.md).
+> Model data aktual ada di `src/lib/models/` (`contacts`, `posts`).
+
 ## 1. Overview
 Proyek ini adalah pengembangan ulang (redevelopment) dari website Company Profile Serasi Nusa (https://www.serasinusa.id/). Tujuan utamanya adalah mempertahankan struktur, tampilan, dan nuansa website aslinya secara semirip mungkin, namun melakukan perombakan total pada sisi teknologi menggunakan stack web modern.
 

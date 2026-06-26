@@ -20,9 +20,20 @@ npm run build
 
 ## Database & Hosting
 
-Target database proyek adalah MySQL/MariaDB dari cPanel. Target deployment adalah cPanel Node.js App dengan Node.js `>=20.9.0`.
+Stack data proyek: **MongoDB Atlas** (database, via Mongoose) dengan deployment ke **Vercel**.
+Butuh environment variable `MONGODB_URI`, `MONGODB_DB`, dan `ADMIN_TOKEN` — salin `.env.example`
+ke `.env.local` lalu isi.
+
+```bash
+cp .env.example .env.local   # lalu isi MONGODB_URI dll
+```
+
+Cek koneksi setelah `npm run dev`: buka `http://localhost:3000/api/health`.
 
 Panduan lengkap tersedia di:
 
-- [PRD.md](./PRD.md)
-- [docs/SETUP_CPANEL.md](./docs/SETUP_CPANEL.md)
+- [docs/SETUP_VERCEL.md](./docs/SETUP_VERCEL.md) — setup MongoDB Atlas + deploy Vercel (aktif)
+- [PRD.md](./PRD.md) — dokumen kebutuhan produk
+- [docs/SETUP_CPANEL.md](./docs/SETUP_CPANEL.md) — rencana cPanel/MySQL lama (arsip)
+
+> Catatan: proyek pindah dari rencana awal cPanel/MySQL ke Vercel/MongoDB.

@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { ContactForm } from '@/components/ContactForm';
 
 export const metadata: Metadata = {
   title: 'Kontak - Serasi Nusa',
@@ -45,11 +46,8 @@ export default function Kontak() {
            </div>
 
            <div className="bg-slate-50 p-8 rounded-2xl border border-slate-100 shadow-sm">
-              <h3 className="text-2xl font-bold font-heading text-slate-900 mb-6">Lokasi Kantor Kami</h3>
-              <div className="w-full h-64 bg-slate-200 rounded-xl flex items-center justify-center overflow-hidden border border-slate-200">
-                 {/* Peta embed placeholder */}
-                 <span className="text-slate-400">Peta Google Maps tidak dapat dimuat otomatis (Area Iframe)</span>
-              </div>
+              <h3 className="text-2xl font-bold font-heading text-slate-900 mb-6">Kirim Pesan</h3>
+              <ContactForm />
            </div>
         </div>
       </div>
